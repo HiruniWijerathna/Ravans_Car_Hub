@@ -1,9 +1,5 @@
 <div align="center">
-  <br />
-    <a href="https://youtu.be/pUNSHPyVryU?feature=shared" target="_blank">
-      <img src="https://github.com/adrianhajdin/project_next13_car_showcase/assets/151519281/2453c186-0ae9-448f-b3c4-077bf910680e" alt="Project Banner">
-    </a>
-  <br />
+  
 
   <div>
     <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
@@ -20,25 +16,12 @@
 
 ---
 
-## 📋 Table of Contents
-
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets](#snippets)
-6. 🔗 [Links](#links)
-7. 🚀 [More](#more)
-
----
 
 ## 🤖 Introduction
 
 **Ravens Car Show** is a modern, fully responsive car showcase platform built using **Next.js 13**, **TypeScript**, and **Tailwind CSS**. The app allows users to explore a wide range of cars, filter them by various criteria, and learn more about each model using data fetched from third-party APIs.
 
-This project is inspired by the [JavaScript Mastery tutorial](https://www.youtube.com/@javascriptmastery/videos) and is great for learning full-stack web development with server-side rendering.
 
----
 
 ## ⚙️ Tech Stack
 
@@ -63,17 +46,4 @@ This project is inspired by the [JavaScript Mastery tutorial](https://www.youtub
 
 ---
 
-## 🤸 Quick Start
 
-### Prerequisites
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/)
-
-### Installation
-
-```bash
-git clone https://github.com/adrianhajdin/project_next13_car_showcase.git
-cd project_next13_car_showcase
-npm install
