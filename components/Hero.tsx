@@ -21,8 +21,7 @@ const Hero = () => {
         </h1>
 
         <p className=" hero__subtitle dark:text-blue-100">
-          Streamline your car rental experience with our effortless booking
-          process.
+          Renting a car? We make it effortless from start to drive.
         </p>
 
         <CustomButton
@@ -31,9 +30,9 @@ const Hero = () => {
           handleClick={handleScroll}
         />
       </div>
-      <div className="hero__image-container">
+      <div className="hero__image-container ">
         <div className="hero__image">
-          <Image src="/hero.png" alt="hero" fill className="object-contain" />
+          <Image src="/image.png" alt="hero" fill className="object-contain " />
         </div>
 
         <div className="hero__image-overlay" />

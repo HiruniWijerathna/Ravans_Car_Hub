@@ -34,14 +34,14 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className='flex flex-wrap items-center justify-between px-6 py-10 mt-10 border-t border-gray-100 sm:px-16'>
-      <p>@2023 CarHub. All rights reserved</p>
+    <div className='flex flex-wrap items-center justify-between px-6 py-10 mt-10 text-gray-200 border-t border-gray-100 sm:px-16'>
+      <p>@2023 RavanCarHub. All rights reserved</p>
 
       <div className="footer__copyrights-link">
-        <Link href="/" className="text-gray-500">
+        <Link href="/" className="text-gray-200">
           Privacy & Policy
         </Link>
-        <Link href="/" className="text-gray-500">
+        <Link href="/" className="text-gray-200">
           Terms & Condition
         </Link>
       </div>
