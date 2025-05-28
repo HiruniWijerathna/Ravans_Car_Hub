@@ -33,16 +33,11 @@
 
 ---
 
-## 🔋 Features
-
-- 🏠 **Home Page** – Stylish landing page with hero and featured car sections.
-- 🔍 **Search & Filtering** – Filter cars by make, model, fuel type, and production year.
-- ⚡ **Server-side Rendering (SSR)** – For improved SEO and performance.
-- 📄 **Pagination** – Easy navigation through car listings.
-- 📱 **Responsive Design** – Optimized for all devices.
-- 🔧 **TypeScript** – For type safety and better developer experience.
-- 🔍 **SEO Optimized** – Metadata configuration for better visibility.
-- 🔁 **Reusable Components** – Clean and modular codebase.
+🚀 Key Features:
+🔍 Smart Car Search: Filter by make, model, fuel type, year, and more
+📱 Fully Responsive Design: Mobile-first UI that adapts across all screens
+⚡ Fast & Optimized: Built with Next.js for speed and SEO
+🔗 Real-time Car Data: Integrated with Cars API via RapidAPI Hub
 
 ---
 
