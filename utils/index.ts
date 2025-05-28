@@ -5,7 +5,7 @@ import { CarProps, FilterProps } from "@types";
      const { manufacturer, year, model, limit, fuel } = filters;
      
   const headers = {
-  'x-rapidapi-key': '18015c3c9dmsh96a27a5253e1d93p13e967jsn89be9aa24bc1',
+    'x-rapidapi-key': process.env.NEXT_PUBLIC_RAPID_API_KEY || '',
     'x-rapidapi-host': 'cars-by-api-ninjas.p.rapidapi.com'
   };
 
@@ -40,7 +40,7 @@ export const generateCarImageUrl = (car: CarProps, angle?: string) => {
   const url = new URL("https://cdn.imagin.studio/getimage");
   const { make, model, year } = car;
 
-  url.searchParams.append('customer', '3687c7683b8011f0846b0242ac120002');
+  url.searchParams.append('customer', 'hrjavascript-mastery');
   url.searchParams.append('make', make);
   url.searchParams.append('modelFamily', model.split(" ")[0]);
   url.searchParams.append('zoomType', 'fullscreen');

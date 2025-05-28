@@ -11,7 +11,7 @@ export default async function Home({ searchParams }: HomeProps) {
     manufacturer: searchParams.manufacturer || "",
     year: searchParams.year || 2024,
     fuel: searchParams.fuel || "",
-    limit: searchParams.limit || 10,
+    limit: searchParams.limit || 20,
     model: searchParams.model || "",
   });
 
@@ -47,9 +47,9 @@ export default async function Home({ searchParams }: HomeProps) {
             </div>
             
              <ShowMore
-              pageNumber={(searchParams.limit || 10) / 10}
-              isNext={(searchParams.limit || 10) > allCars.length}
-            />
+               pageNumber={searchParams.limit ? Number(searchParams.limit) / 10 : 2}
+               isNext={allCars.length < (searchParams.limit ? Number(searchParams.limit) : 20)}
+             />
           </section>
         ) : (
           <div className='home__error-container'>
