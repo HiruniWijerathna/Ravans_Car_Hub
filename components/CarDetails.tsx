@@ -29,8 +29,8 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
             <div className="fixed inset-0 bg-black bg-opacity-25" />
           </Transition.Child>
 
-          <div className="fixed inset-0 overflow-y-auto bg-gray-600">
-            <div className="flex items-center justify-center min-h-full p-4 text-center">
+          <div className="fixed inset-0 overflow-y-auto ">
+            <div className="flex items-center justify-center min-h-full p-4 text-center ">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -40,7 +40,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="relative w-full max-w-md max-h-[90vh] overflow-y-auto transform rounded-lg bg-white p-4 text-left shadow-lg transition-all flex flex-col gap-4 text-sm sm:text-xs">
+                <Dialog.Panel className="relative w-full max-w-md max-h-[90vh] overflow-y-auto transform rounded-lg dark:bg-gray-800 p-4 text-left shadow-lg transition-all flex flex-col gap-4 text-sm sm:text-xs">
                   {/* Close button */}
                   <button
                     type="button"
@@ -58,18 +58,18 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
 
                   {/* Images */}
                   <div className="flex flex-col flex-1 gap-2">
-                    <div className="relative w-full h-40 rounded-md bg-pattern">
+                    <div className="relative w-full h-40 rounded-md bg-pattern ">
                       <Image
                         src={generateCarImageUrl(car)}
                         alt="car model"
                         fill
                         priority
-                        className="object-contain"
+                        className="object-contain "
                       />
                     </div>
 
                     <div className="flex gap-2">
-                      <div className="relative flex-1 w-full h-20 rounded-md bg-primary-blue-100">
+                      <div className="relative flex-1 w-full h-20 rounded-md bg-primary-blue-100 dark:bg-gray-500">
                         <Image
                           src={generateCarImageUrl(car, "29")}
                           alt="car model"
@@ -78,7 +78,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                           className="object-contain"
                         />
                       </div>
-                      <div className="relative flex-1 w-full h-20 rounded-md bg-primary-blue-100">
+                      <div className="relative flex-1 w-full h-20 rounded-md bg-primary-blue-100 dark:bg-gray-500">
                         <Image
                           src={generateCarImageUrl(car, "33")}
                           alt="car model"
@@ -87,7 +87,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                           className="object-contain"
                         />
                       </div>
-                      <div className="relative flex-1 w-full h-20 rounded-md bg-primary-blue-100">
+                      <div className="relative flex-1 w-full h-20 rounded-md bg-primary-blue-100 dark:bg-gray-500">
                         <Image
                           src={generateCarImageUrl(car, "13")}
                           alt="car model"
@@ -101,10 +101,10 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
 
                   {/* Car details */}
                   <div>
-                    <h2 className="mb-3 text-base font-semibold text-center text-primary">
+                    <h2 className="mb-3 text-base font-semibold text-center text-gray-200 text-primary">
                       {car.make} {car.model}
                     </h2>
-                    <div className="grid grid-cols-1 text-gray-700 gap-y-2">
+                    <div className="grid grid-cols-1 text-gray-300 gap-y-2">
                       {Object.entries(car).map(([key, value]) => (
                         <div
                           className="flex justify-between pb-1 border-b"
@@ -113,7 +113,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                           <span className="text-gray-500 capitalize text-xs sm:text-[10px]">
                             {key.split("_").join(" ")}
                           </span>
-                          <span className="font-medium text-gray-800 text-xs sm:text-[10px]">
+                          <span className="font-medium text-gray-200 text-xs sm:text-[10px]">
                             {value}
                           </span>
                         </div>

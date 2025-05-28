@@ -5,7 +5,7 @@ import { CarProps, FilterProps } from "@types";
      const { manufacturer, year, model, limit, fuel } = filters;
      
   const headers = {
-  'x-rapidapi-key': 'a0113927efmsh9e4646c964c3b5ep1d2ab2jsn4a965cb6c9f1',
+  'x-rapidapi-key': '18015c3c9dmsh96a27a5253e1d93p13e967jsn89be9aa24bc1',
     'x-rapidapi-host': 'cars-by-api-ninjas.p.rapidapi.com'
   };
 
@@ -21,13 +21,13 @@ import { CarProps, FilterProps } from "@types";
   return result;
   }
 
-  export const calculateCarRent = (city_mpg: number, year: number) => {
+  export const calculateCarRent = (cylinders: number, year: number) => {
   const basePricePerDay = 50; // Base rental price per day in dollars
   const mileageFactor = 0.1; // Additional rate per mile driven
   const ageFactor = 0.05; // Additional rate per year of vehicle age
 
   // Calculate additional rate based on mileage and age
-  const mileageRate = city_mpg * mileageFactor;
+  const mileageRate = cylinders * mileageFactor;
   const ageRate = (new Date().getFullYear() - year) * ageFactor;
 
   // Calculate total rental rate per day

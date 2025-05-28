@@ -11,11 +11,11 @@ interface CarCardProps {
   car: CarProps;}
 
 const CarCard = ({ car }:CarCardProps )=> {
-  const{city_mpg, year, make, model, transmission, drive} = car;
+  const{cylinders, year, make, model, transmission, drive} = car;
   
   const [isOpen, setIsOpen] = useState(false);
   
-  const carRent = calculateCarRent(city_mpg, year);
+  const carRent = calculateCarRent(cylinders, year);
 
   return (
     <div className="transition cursor-pointer car-card group dark:bg-gray-400 dark:text-black hover:bg-gray-400 dark:hover:bg-gray-300">
