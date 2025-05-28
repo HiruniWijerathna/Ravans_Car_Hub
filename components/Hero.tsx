@@ -14,13 +14,13 @@ const Hero = () => {
   };
 
   return (
-    <div className="hero">
-      <div className="flex-1 pt-36 padding-x">
-        <h1 className="hero__title">
+    <div className="hero dark:text-blue-300">
+      <div className="flex-1 pt-36 padding-x ">
+        <h1 className="hero__title ">
           Find, book, rent a car—quick and super easy!
         </h1>
 
-        <p className="hero__subtitle">
+        <p className=" hero__subtitle dark:text-blue-100">
           Streamline your car rental experience with our effortless booking
           process.
         </p>

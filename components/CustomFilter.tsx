@@ -28,11 +28,11 @@ export default function CustomFilter({ title, options }: CustomFilterProps) {
           handleUpdateParams(e); // Update the URL search parameters and navigate to the new URL
         }}
       >
-        <div className='relative w-fit z-10'>
+        <div className='relative z-10 w-fit '>
           {/* Button for the listbox */}
-          <Listbox.Button className='custom-filter__btn'>
+          <Listbox.Button className='custom-filter__btn dark:bg-gray-600'>
             <span className='block truncate'>{selected.title}</span>
-            <Image src='/chevron-up-down.svg' width={20} height={20} className='ml-4 object-contain' alt='chevron_up-down' />
+            <Image src='/chevron-up-down.svg' width={20} height={20} className='object-contain ml-4' alt='chevron_up-down' />
           </Listbox.Button>
           {/* Transition for displaying the options */}
           <Transition

@@ -59,20 +59,20 @@ const SearchBar = () => {
   };
 
   return (
-    <form className='searchbar' onSubmit={handleSearch}>
-      <div className='searchbar__item'>
+    <form className='searchbar dark:bg-gray-600 ' onSubmit={handleSearch}>
+      <div className='searchbar__item '>
         <SearchManufacturer
           manufacturer={manufacturer}
           setManuFacturer={setManuFacturer}
         />
-        <SearchButton otherClasses='sm:hidden' />
+        <SearchButton otherClasses='sm:hidden ' />
       </div>
-      <div className='searchbar__item'>
+      <div className='searchbar__item '>
         <Image
           src='/model-icon.png'
           width={25}
           height={25}
-          className='absolute w-[20px] h-[20px] ml-4'
+          className='absolute w-[20px] h-[20px] ml-4 '
           alt='car model'
         />
         <input
